@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/teks1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CURICULUM VITAE"
+        android:textColor="@android:color/black"
+        android:textSize="30dp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/teks2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/teks1"-->
+<!--        android:text="Nama      : Muhammad Rizki Hidayat"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="#000"-->
+<!--        />-->
+<!--    <TextView-->
+<!--        android:id="@+id/teks3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@+id/teks2"-->
+<!--        android:text="TTL           : Tegal, 10 Februari 2000"-->
+<!--        android:textSize="15dp"-->
+<!--        android:textColor="#000"-->
+<!--        />-->
+
+
+    <ImageView
+        android:layout_marginLeft="60dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/kiki"
+        android:layout_alignParentRight="true"/>
+    
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/simpleTableLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:layout_below="@id/teks1"> <!-- stretch the second column of the layout-->
+
+        <!-- first row of the table layout-->
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data Pribadi"
+                android:textColor="#000"
+                android:textSize="15dp"
+                android:background="#FF0000"/>
+
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <!-- first element of the row-->
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Muhammad Rizki Hidayat"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TTL"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Tegal, 10 Februari 2000"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alamat"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Pakembaran, Slawi Kab.Tegal"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": qiqi.gunscloud@gmail.com"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jenis Kelamin"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Laki-laki"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Agama"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Islam"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Belum Menikah"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi/Berat Badan"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": 176cm/55kg"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Golongan Darah"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": O"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kewarganegaraan"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": Indonesia"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Riwayat Pendidikan"
+                android:textColor="#000"
+                android:background="#FF0000"
+                android:textSize="15dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SD"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": SD N Slawi Kulon 03"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMP"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": SMP N 1 Adiwerna"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+        </TableRow>
+        <TableRow
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SMA"
+                android:textColor="#000"
+                android:textSize="12dp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=": SMA N 1 Slawi"
+                android:textColor="#000"
+                android:textSize="13dp" />
+
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
